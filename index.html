@@ -22,7 +22,7 @@ var map = L.mapbox.map('map', 'mapbox.pirates')
 
 var Bzhead = L.icon({
 	iconUrl: 'Brazenhead.png',
-	iconSize: [40, 40],
+	iconSize: [50, 50],
 	iconAnchor: [30, 30],
 });
 
@@ -30,11 +30,13 @@ L.marker([39.988045, -83.033679], {icon: Bzhead}).addTo(map);
 
 var Hadleys = L.icon({
 	iconUrl: 'Hadleys2.png',
-	iconSize: [38, 95],
-	iconAnchor: [22, 94],
+	iconSize: [50, 50],
+	iconAnchor: [30, 30],
 });
 
+popupContent = '<p>Hello world!<br />This is a nice popup.</p>'
 L.marker([39.957303, -82.995028], {icon: Hadleys}).addTo(map);
+marker.bindPopup(popupContent).openPopup();
 
 </script>
 </body>
