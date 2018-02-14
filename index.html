@@ -1,3 +1,4 @@
+
 23
 <!DOCTYPE html>
 <html>
@@ -19,15 +20,21 @@ L.mapbox.accessToken = 'pk.eyJ1IjoicmZyYW50eiIsImEiOiJkN2p1Wm93In0.uha-WxArw2jdG
 var map = L.mapbox.map('map', 'mapbox.pirates')
     .setView([39.983171, -83.0142], 13);
 
-L.marker([39.988045, -83.033679]).addTo(map);
+var Bzhead = L.icon({
+	iconUrl: 'Brazenhead.png',
+	iconSize: [38, 95],
+	iconAnchor: [22, 94],
+});
 
-var myIcon = L.icon({
+L.marker([39.988045, -83.033679], {icon: Bzhead}).addTo(map);
+
+var Hadleys = L.icon({
 	iconUrl: 'Hadleys2.png',
 	iconSize: [38, 95],
 	iconAnchor: [22, 94],
 });
 
-L.marker([39.957303, -82.995028], {icon: myIcon}).addTo(map);
+L.marker([39.957303, -82.995028], {icon: Hadleys}).addTo(map);
 
 </script>
 </body>
