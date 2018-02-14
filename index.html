@@ -19,25 +19,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoicmZyYW50eiIsImEiOiJkN2p1Wm93In0.uha-WxArw2jdG
 var map = L.mapbox.map('map', 'mapbox.pirates')
     .setView([39.983171, -83.0142], 13);
 
-L.mapbox.featureLayer({
-    type: 'Feature',
-    geometry: {
-        type: 'Point',
-        // coordinates here are in longitude, latitude order because
-        // x, y is the standard for GeoJSON and many formats
-        coordinates: [
-          39.988045,
-          -83.033679 
-        ]
-    },
-    properties: {
-        title: 'Brazenhead',
-        description: '1027 W 5th Ave, Columbus, OH 43212',
-        'marker-size': 'large',
-        'marker-color': '#BE9A6B',
-        'marker-symbol': 'cafe'
-    }
-}).addTo(map);
+L.marker([39.988045, -83.033679]).addTo(map);           
+
 </script>
 </body>
 </html>
