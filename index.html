@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>A simple map</title>
+<title>Happy St Patrick's Day 2018 Irish Pirates!</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
@@ -18,9 +18,8 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoicmZyYW50eiIsImEiOiJkN2p1Wm93In0.uha-WxArw2jdGYmsvacXeA';
 var map = L.mapbox.map('map', 'mapbox.pirates')
     .setView([39.983171, -83.0142], 11);
+
 L.mapbox.featureLayer({
-    // this feature is in the GeoJSON format: see geojson.org
-    // for the full specification
     type: 'Feature',
     geometry: {
         type: 'Point',
@@ -32,10 +31,8 @@ L.mapbox.featureLayer({
         ]
     },
     properties: {
-        title: 'Peregrine Espresso',
-        description: '1718 14th St NW, Washington, DC',
-        // one can customize markers by adding simplestyle properties
-        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        title: 'Brazenhead',
+        description: '1027 W 5th Ave, Columbus, OH 43212',
         'marker-size': 'large',
         'marker-color': '#BE9A6B',
         'marker-symbol': 'cafe'
