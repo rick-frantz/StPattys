@@ -35,8 +35,7 @@ var Hadleys = L.icon({
 });
 
 popupContent = '<p>Hello world!<br />This is a nice popup.</p>'
-L.marker([39.957303, -82.995028], {icon: Hadleys}).addTo(map);
-marker.bindPopup(popupContent).openPopup();
+L.marker([39.957303, -82.995028], {icon: Hadleys}).bindPopup(popupContent).addTo(map);
 
 </script>
 </body>
